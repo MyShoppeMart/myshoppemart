@@ -1,0 +1,105 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+/*SITE HEADER STYLING BY PRINCE KELVIN ONYENANU
+PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
+.firstnav{
+  overflow: hidden;
+  background-color: #CCCCCC; 
+}
+.firstnav a {
+  float: right;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 13px;
+}
+.firstnav a:hover {
+  background-color: #ddd;
+  color:#FF6600 ;
+}
+#call{
+  float: left;
+  margin: 0;
+}
+.nav{
+	border-bottom: 1px solid red;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+	background-color: orange;
+}
+.nav a:hover {
+  color:#FF6600 ;
+}
+.menu{
+	margin: 0 0 0 0;
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+	margin: 0 10px;
+	line-height: 70px;
+	/*border: 2px solid white;*/
+	/*border-radius: 25px;*/
+}
+label{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#logo{
+	float: left;
+	margin: 0;
+}
+#toggle{
+	display: none;
+}
+#cart{
+	display: none;
+}
+@media screen and (max-width: 500px){
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	.firstnav{
+		display: none;
+	}
+
+	.nav{
+		background-color: white;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	.menu a{
+		background-color: orange;
+		display: block;
+		border-bottom: 1px solid white;
+		margin: 0;
+		clear: right;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+
+	}
+	#logo{
+		height: 0px;
+	}
+	#cart{
+		padding-right: 15px;
+		display: inline-block;
+		width: 20px;
+		float: right;
+	}
+}
+/*WARNING ENDS HERE*/
