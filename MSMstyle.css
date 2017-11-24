@@ -11,6 +11,7 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
   background-color: #CCCCCC; 
 }
 .firstnav a {
+  color: black;	
   float: right;
   text-decoration: none;
   padding: 15px 20px;
@@ -100,6 +101,7 @@ label{
 		display: inline-block;
 		width: 20px;
 		float: right;
+		color: black;
 	}
 }
 /*WARNING ENDS HERE*/
