@@ -130,7 +130,7 @@ label{
 .slider-container{
 	width: 100%;
 	height: 400px;
-	background-color: black;
+	background-color: gray;
 }
 .slider-container p{
 	margin: 0 0 0 0;
@@ -191,6 +191,11 @@ label{
 	.dropbtn {
 	color: black
 
+	}
+	.slider-container{
+		display: block;
+		padding-top: 100px;
+		background-color: gray; 
 	}
 }
 /* On smaller screens, decrease text size */
