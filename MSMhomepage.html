@@ -25,23 +25,42 @@
 		<a href="#cart" id="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 		<input type="checkbox" id="toggle"/>
 		<div class="menu">
-			<a href="#cart">ABOUT</a>
-			<a href="#cart">CONTACT US</a>
-			<a href="#cart">MARKET PLACE</a>
-			<div class="dropdown">
-    			<button class="dropbtn" onclick="myFunction()"><i class="fa fa-th-list" aria-hidden="true"></i> Categories
+			<a href="#cart">Phones&Tablets</a>
+			<a href="#cart">TVs&Electronics</a>
+			<a href="#cart">Computing</a>
+			<a href="#cart">Food Items</a>
+			<a href="#cart"><button class="dropbtn" onclick="myFunction()"><i class="fa fa-th-list" aria-hidden="true"></i> Categories
       			<i class="fa fa-caret-down"></i>
     			</button>
    			 	<div class="dropdown-content" id="myDropdown">
       				<a href="#">Link 1</a>
       				<a href="#">Link 2</a>
      				<a href="#">Link 3</a>
-    			</div>
-    		</div>
-    </div> 
+    			</div></a>
+
+			<a><input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"><button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+
+    </div>
+
+
+
+
 	
-<!------------------PLEASE DO NOT TAMPER WITH ANY CODE ABOVE THIS------------------>
-	
+
+<script>
+var screenSize = screen.width;
+console.log(screenSize);
+function changeid ()
+{
+	if (screenSize <= 1000){
+		var e = document.getElementById("category");
+		e.id = "";
+
+	}
+}
+//changeid ();
+</script> 
+		
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -59,6 +78,8 @@ window.onclick = function(e) {
   }
 }
 </script>
+
+<!------------------PLEASE DO NOT TAMPER WITH ANY CODE ABOVE THIS------------------>
 
 </body>
 </html>
