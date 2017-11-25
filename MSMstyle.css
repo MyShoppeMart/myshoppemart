@@ -40,7 +40,6 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 	margin: 0 0 0 0;
 }
 .menu a{
-	font-family: Arial;
 	text-decoration: none;
 	color: white;
 	margin: 0 10px;
@@ -129,6 +128,7 @@ label{
 		display: none;
 	}
 	.menu a{
+		font-size: 13px;
 		color: black;
 		background-color: #f9f9f9;
 		display: block;
