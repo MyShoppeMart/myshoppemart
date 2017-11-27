@@ -1,0 +1,47 @@
+html, body{
+    font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+/*SITE HEADER STYLING BY PRINCE KELVIN ONYENANU
+PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
+.firstnav{
+  overflow: hidden;
+  background-color: #e35354;
+  position: sticky;
+}
+.firstnav a {
+  color: black;	
+  float: right;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 13px;
+}
+.firstnav a:hover {
+  background-color: #ffffff;
+  text-decoration: none;
+}
+#call{
+  float: left;
+  margin: 0;
+}
+
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img {
+margin-left: 0px; 
+width: 20%; 
+float: left; 
+height: 500px;  }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
