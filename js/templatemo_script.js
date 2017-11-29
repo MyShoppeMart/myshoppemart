@@ -41,13 +41,13 @@ jQuery(function(){
                                             'padding-right': "10%",
                                             });
     });
-	
-	/*
-	var dt = window.atob('IHwgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbS9wcmV2aWV3L3RlbXBsYXRlbW9fNDExX2RyYWdvbmZydWl0Ij5EcmFnb25mcnVpdDwvYT4gYnkgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbSI+dGVtcGxhdGVtbzwvYT4='); 
-	var y = document.getElementById('footer');
-	y.innerHTML += dt;
-	*/
-	
+    
+    /*
+    var dt = window.atob('IHwgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbS9wcmV2aWV3L3RlbXBsYXRlbW9fNDExX2RyYWdvbmZydWl0Ij5EcmFnb25mcnVpdDwvYT4gYnkgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbSI+dGVtcGxhdGVtbzwvYT4='); 
+    var y = document.getElementById('footer');
+    y.innerHTML += dt;
+    */
+    
     //about textimonial
     $.current_testimonial = $("div.testimonial_text").first() ;
     $("div.testimonial_text").hide();
@@ -219,7 +219,7 @@ jQuery(function(){
     jQuery.fn.anchorAnimate = function(settings) {
         settings = jQuery.extend({
             speed : 1100
-        }, settings);	
+        }, settings);   
         return this.each(function(){
             var caller = this
             $(caller).click(function (event){
