@@ -400,3 +400,63 @@ h1 {
 /*  Large devices (large desktops, 1200px and up)  */
 @media (min-width: 1200px ) {
 }
+/* My changes started here for the custom description page*/
+#templatemo_describe {
+    background: #000033;
+    float: left;
+}
+#templatemo_describe h1 {
+    color: #fff;
+}
+#templatemo_describe h2 {
+    font-size: 24px;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+#templatemo_describe_map {
+    width: 100%;
+    height: 320px;
+    float: left;
+    margin-bottom: 40px;
+}
+#templatemo_describe ul li a {
+    background: none;
+}
+#templatemo_describe ul li a i {
+    width: 60px;
+    padding: 20px 0;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+#templatemo_describe p {
+    color: #fff;
+    line-height: 30px;
+    margin-top: 15px;
+}
+#templatemo_describe input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    color: #000;
+}
+#templatemo_describe textarea {
+    border: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+#templatemo_describe button {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background: #eaeaea;
+}
+#templatemo_describe button:hover {
+    background: #f4f4f4;
+}
