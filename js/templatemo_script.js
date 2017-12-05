@@ -5,6 +5,7 @@ jQuery(function(){
     });
     //main menu
     $("#templatemo_banner_menu ul").singlePageNav({offset: $('#templatemo_banner_menu').outerHeight()});
+    $("#templatemo_mobile_menu ul").singlePageNav({offset: $('#templatemo_mobile_menu').outerHeight()});
     //banner slide
     $('.banner').unslider({fluid: true});
     $(window).on("load scroll resize", function(){
