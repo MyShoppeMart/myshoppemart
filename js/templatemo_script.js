@@ -86,6 +86,10 @@ jQuery(function(){
             });
         });
     }
+    /* trial code to send in mobile menu when another area is clicked*/
+    $(document).click( function(){
+    $('#templatemo_mobile_menu').hide();
+});
     //animate scroll function calll
     $("#templatemo_mobile_menu a").anchorAnimate();    
     //about
