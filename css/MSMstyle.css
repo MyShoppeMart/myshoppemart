@@ -108,6 +108,12 @@ label{
 #cart{
 	display: none;
 }
+#myLabel{
+	padding-left: 187px;
+}
+#secondLabel{
+	padding-left: 200px;
+}
 @media screen and (max-width: 500px){
 	label{
 		display: block;
@@ -154,6 +160,13 @@ label{
 	.dropdown{
 		display: none;
 	}
+	#myLabel{
+		padding-left: 13px;
+	}
+	#secondLabel{
+		padding-left: 15px;
+	}
+
 }
 @keyframes slidy {
 0% { left: 0%; }

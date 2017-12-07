@@ -402,7 +402,7 @@ h1 {
 }
 /* My changes started here for the custom description page*/
 #templatemo_describe {
-    background: #4f4f4f;
+    background: #f15556;
     float: left;
 }
 #templatemo_describe h1 {
@@ -462,6 +462,14 @@ h1 {
 #templatemo_describe button:hover {
     background: #f4f4f4;
 }
+#templatemo_describe #logiCheck{
+    font-size: 2em;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+}
+
 
 #templatemo_team{
     width: 100%;
