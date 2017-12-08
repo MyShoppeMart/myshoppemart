@@ -90,6 +90,38 @@ jQuery(function(){
     $(document).click( function(){
     $('#templatemo_mobile_menu').hide();
 });
+
+    /* Linking to the about page desktop view*/
+    $(document).ready(function() {
+  
+  $('a[href$=MSMabout]').click(function() {
+    
+    window.location.href= 'MSMabout.html';
+   
+  });
+});
+
+    /* Linking to the about page mobile view*/
+     $(document).ready(function() {
+  
+  $('#templatemo_mobile_menu').click(function() {
+    
+    window.location.href= 'MSMabout.html';
+   
+  });
+});
+
+    /* Linking back the home page desktop view*/
+    $(document).ready(function() {
+  
+  $('a[href$=MSMhomepage]').click(function() {
+    
+    window.location.href= 'MSMhomepage.html';
+   
+  });
+});
+
+
     //animate scroll function calll
     $("#templatemo_mobile_menu a").anchorAnimate();    
     //about
