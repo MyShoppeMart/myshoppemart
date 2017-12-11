@@ -7,166 +7,63 @@ html, body{
 
 /*SITE HEADER STYLING BY PRINCE KELVIN ONYENANU
 PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
-.firstnav{
-  overflow: hidden;
-  background-color: #CCCCCC; 
-}
-.firstnav a {
-  color: black;	
-  float: right;
-  text-decoration: none;
-  padding: 15px 20px;
-  font-size: 13px;
-}
-.firstnav a:hover {
-  background-color: #ddd;
-  color:#FF6600 ;
-}
-#call{
-  float: left;
-  margin: 0;
-}
-.nav{
-	text-align: right;
-	height: 70px;
-	line-height: 70px;
-	
-}
-.nav a:hover {
-  color:#2F4F4F ;
-}
-.menu{
-	margin: 0 0 0 0;
-}
-.menu a{
-	font-family: Arial;
-	text-decoration: none;
-	color: white;
-	margin: 0 10px;
-	line-height: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-	/*border: 2px solid white;*/
-	/*border-radius: 25px;*/
-}
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-.dropdown:hover .dropbtn {
-    color: red;
-}
-.dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
-}
-label{
-	margin: 0 40px 0 0;
-	font-size: 26px;
-	line-height: 70px;
+#mainLabel{
+	padding-top: 8px; 
+	color: #f15556;
 	display: none;
+	font-size: 30px;
+	line-height: 70px;
 	width: 26px;
 	float: right;
+	margin: 0 10px 0 0;
 }
-#logo{
-	float: left;
-	margin: 0;
+#thelogo{
+	padding: 0;
+	height: 50px;
+    float: left;
+}
+#thelogo a{
+	
 }
 #toggle{
 	display: none;
 }
-#cart{
-	display: none;
-}
 #myLabel{
-	padding-left: 187px;
+	padding-left: 200px;
+
 }
 #secondLabel{
 	padding-left: 200px;
 }
-@media screen and (max-width: 500px){
-	label{
-		display: block;
-		cursor: pointer;
-	}
-	.firstnav{
-		display: none;
-	}
+/*My new changes begin here*/
 
-	.nav{
-		background-color: white;
-		border-bottom: 1px solid white;
-	}
-	.menu{
-		float: right;
-		text-align: center;
-		width: 80%;
-		display: none;
-	}
-	.menu a{
-		color: black;
-		background-color: #f9f9f9;
-		display: block;
-		border-bottom: 1px solid black;
-		margin: 0;
-		clear: right;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	}
+.newnav{
+    top: 0;
+    width:100%;
+	text-align: right;
+	height: 90px;
+	line-height: 80px;
+	background-color: #f9f9f9;
+}
+.newnav a, .newnav a:focus{
 
-	#toggle:checked + .menu{
-		display: block;
+	padding: 50px;
+	margin: 5px;
+	/padding-top: 35px;
+    padding-bottom: 50px;
+    font: normal normal normal 18px/23px 'Lato', sans-serif;
+    color: #000;
+    transition-duration: .5s;
 
-	}
-	#logo{
-		height: 0px;
-	}
-	#cart{
-		padding-right: 15px;
-		display: inline-block;
-		width: 20px;
-		float: right;
-		color: black;
-	}
-	.dropdown{
-		display: none;
-	}
-	#myLabel{
-		padding-left: 13px;
-	}
-	#secondLabel{
-		padding-left: 15px;
-	}
-
+}
+.newnav a:hover ,
+.newnav a.current
+{
+    background-color: #f15556;
+    color: #ffffff;
+    text-decoration: none;
+    
 }
 @keyframes slidy {
 0% { left: 0%; }
@@ -184,6 +81,7 @@ label{
 body { margin: 0; } 
 div#slider { overflow: hidden; }
 div#slider figure img {
+padding-top: 80px;
 margin-left: 0px; 
 width: 20%; 
 float: left; 
@@ -198,9 +96,95 @@ div#slider figure {
   animation: 30s slidy infinite; 
 }
 
+div#slider2 { overflow: hidden; }
+div#slider2 figure img {
+margin-left: 0px; 
+width: 20%; 
+float: left; 
+height: 500px;  }
+div#slider2 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
 
 
 .want-to-meet img{
 	width: 100%;
 	height: 500px;
+}
+
+
+@media screen and (max-width: 500px){
+	
+	#mainLabel{
+	display: block;
+	cursor: pointer;
+	}
+
+	.newnav{
+		z-index: 1;
+
+	}
+
+	.nav{
+		background-color: white;
+		border-bottom: 1px solid white;
+	}
+	.menu{
+		
+		height: 480px;
+		float: right;
+		text-align: left;
+		width: 100%;
+		display: none;
+	
+	}
+	.menu a{
+		z-index: 5500
+		font-size: 13px;
+		color: black;
+		background-color: #f9f9f9;
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0;
+		clear: right;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+
+	}
+	#thelogo{
+		/padding-top: 20px;
+		margin: 0;
+		height: 0px;
+		float: left;
+	}
+	#thelogo a{
+		height: 0;
+		padding: 0 !important;
+	}
+	.dropdown{
+		display: none;
+	}
+	#myLabel{
+		padding-left: 13px;
+	}
+	#secondLabel{
+		padding-left: 15px;
+	}
+	div#slider figure img{
+		height: 250px;
+	}
+	div#slider2 figure img{
+		height: 250px;
+	}
+
 }
