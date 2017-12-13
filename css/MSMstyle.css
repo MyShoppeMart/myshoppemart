@@ -126,13 +126,13 @@ div#slider2 figure {
   animation: 30s slidy infinite; 
 }
 .container_wapper3 {
-	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
     width: 100%;
     background: #BDBDBD;
 }
 
 .container_wapper2 {
-	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
