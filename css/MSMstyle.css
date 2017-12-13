@@ -1,4 +1,5 @@
 html, body{
+    /*font-family: 'Lato', sans-serif;*/
     font-family: 'Raleway', sans-serif;
 	width: 100%;
 	height: 100%;
@@ -7,6 +8,20 @@ html, body{
 
 /*SITE HEADER STYLING BY PRINCE KELVIN ONYENANU
 PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
+#scrollbox {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#scrollbox textarea{
+	width: 100%;
+	height: 600px;
+}
 
 #mainLabel{
 	padding-top: 8px; 
@@ -20,11 +35,11 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 }
 #thelogo{
 	padding: 0;
-	height: 50px;
+	height: 0px;
     float: left;
 }
-#thelogo a:hover {
-	color: #ffffff;
+#thelogo :hover{
+	background-color: #f9f9f9;
 }
 #toggle{
 	display: none;
@@ -34,7 +49,7 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 
 }
 #secondLabel{
-	padding-left: 230px;
+	padding-left: 200px;
 }
 /*My new changes begin here*/
 
@@ -42,16 +57,16 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
     top: 0;
     width:100%;
 	text-align: right;
-	height: 90px;
+	height: 97px;
 	line-height: 80px;
 	background-color: #f9f9f9;
 }
 .newnav a, .newnav a:focus{
-
-	padding: 50px;
-	margin: 5px;
-    padding-bottom: 40px;
-    font: normal normal normal 18px/23px 'Lato', sans-serif;
+	padding: 55px 50px 50px 50px;
+	/margin: 5px;
+	/padding-top: 30px;
+    /padding-bottom: 50px;
+    font: normal normal normal 18px/23px 'Raleway', sans-serif;
     color: #000;
     transition-duration: .5s;
 
@@ -63,27 +78,6 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
     color: #ffffff;
     text-decoration: none;
     
-}
-/*About Us*/
-#landing_about{
-	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about us.jpg');
-	height: 80%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-.description h1 {
-	color: #ffffff;
-    text-align: center;
-    font: normal normal normal 34px/60px 'Lato', sans-serif;
-}
-.description p{
-	text-align: justify;
-	color: #E0E0E0;
-	margin-left: 20px;
-	margin-right: 20px;
-	 font: normal normal normal 20px/30px 'Lato', sans-serif;
-}
-
 }
 @keyframes slidy {
 0% { left: 0%; }
@@ -131,13 +125,56 @@ div#slider2 figure {
   font-size: 0;
   animation: 30s slidy infinite; 
 }
+.container_wapper3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    width: 100%;
+    background: #BDBDBD;
+}
 
-
+.container_wapper2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container_wapper2 img{
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+}
+.container_wapper2 p{
+	 font: normal normal normal 18px/23px 'Raleway', sans-serif;
+	}
+.centered {
+    position: absolute;
+    text-align: justify;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered h3{
+	text-align: center;
+	text-transform: uppercase;
+}
 .want-to-meet img{
 	width: 100%;
 	height: 500px;
 }
-
+#privacybanner{
+	margin-left: 45px;
+	width: 92%;
+	height: 100px;
+	background-color: #f15556; 
+}
+#privacybanner p{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 23px;
+}
 
 @media screen and (max-width: 500px){
 	
@@ -147,7 +184,7 @@ div#slider2 figure {
 	}
 
 	.newnav{
-		z-index: 1;
+		height: 80px;
 
 	}
 
@@ -176,8 +213,6 @@ div#slider2 figure {
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	
 	}
-	.description h1{
-	}
 
 	#toggle:checked + .menu{
 		display: block;
@@ -202,16 +237,40 @@ div#slider2 figure {
 	#secondLabel{
 		padding-left: 15px;
 	}
-	#landing_about{
-	background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
-	margin-top: -20px;
-	background-size: 100%;
-	}
 	div#slider figure img{
 		height: 250px;
 	}
 	div#slider2 figure img{
 		height: 250px;
 	}
+	#scrollbox{
+		padding-left: 30px;
+    	padding-right: 30px;
+	}
+	#privacybanner{
+	margin:0;
+	width: 100%;
+	}
+	.centered {
+
+	max-height: 500px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /transform: translate(-50%, -50%);
+	}
+.centered h3{
+	text-align: center;
+	 font: normal normal normal 18px/23px 'Raleway', sans-serif;
+	}
+
+.centered p {
+	font: normal normal normal 14px/20px 'Raleway', sans-serif;
+	line-height: 1.1em;
+	}
+	.centered p span{
+
+	}
+
 
 }

@@ -1,7 +1,5 @@
 body {
-    /*font-family: 'Lato', sans-serif;*/
     font-family: 'Raleway', sans-serif;
-    width: 100%;
 }
 .container-fluid {
     max-width: 1600px;
@@ -19,7 +17,7 @@ body {
 .bcolor {
     background: #00f;
 }
-{
+h1 {
     margin-top: 60px;
     margin-bottom: 60px;
     text-align: center;
@@ -100,14 +98,6 @@ body {
     background: #ffffff;
     float: left;
 }
-#templatemo_about h1{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-    font: normal normal normal 34px/60px 'Raleway', sans-serif;
-    color: #3b3b3b;
-}
-}
 #templatemo_about .about_icon img {
     width: 100%;
 }
@@ -184,7 +174,135 @@ body {
 #templatemo_about .testimonial_top_bottom_spacer {
     padding-bottom: 80px;
 }
-
+/*events*/
+#templatemo_events {
+    background: #6698b5;
+    float: left;
+    overflow: hidden;
+}
+#templatemo_events h1{
+    color: #fff;
+}
+#templatemo_events .event_box_wap {
+    overflow:hidden;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+#templatemo_events .event_box_wap .event_box_img {
+    position: relative;
+    top: 0;
+}
+#templatemo_events .event_box_wap .event_box_caption {
+    position: relative;
+    top: 0;
+    padding-bottom: 10px;
+    background: #fff;
+    width: 100%;
+    border-top: 3px solid #3c6f8c;
+}
+#templatemo_events .event_box_wap h1,
+#templatemo_events .event_box_wap p {
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
+#templatemo_events .event_box_wap p {
+    padding: 5px 20px 15px 20px;
+}
+#templatemo_events .event_box_wap h1 {
+    padding: 20px 20px 20px 20px;
+    font-size: 24px;
+    line-height: 24px;
+}
+/*timeline*/
+#templatemo_timeline {
+    background: #fff;
+    float: left;
+}
+#templatemo_timeline .container-fluid {
+    max-width: 1600px;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 80px;
+    background: url("../images/time_line_bg.jpg") repeat-y center top;
+}
+#templatemo_timeline .time_line_wap {
+    position: absolute;
+    display: none;
+}
+#templatemo_timeline .time_line_caption {
+    background: #f15556;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 5px;
+    height: 40px;
+    clear: both;
+    color: #fff; 
+}
+#templatemo_timeline .time_line_paragraph {
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 50px;
+    font-family:'Raleway', sans-serif;
+}
+#templatemo_timeline .time_line_paragraph a {
+    color: #000;
+    text-decoration: underline;
+}
+#templatemo_timeline .left_timeline {
+    margin-left: 30px;
+}
+#templatemo_timeline .left_timeline .time_line_caption {
+    float: right;
+    margin-right: 0px;
+}
+#templatemo_timeline .right_timeline .time_line_caption {
+    float: left;
+}
+#templatemo_timeline .time_line_paragraph h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    padding: 20px 20px 20px 20px;
+}
+#templatemo_timeline .time_line_paragraph p {
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2em;
+    color: #000;
+}
+#templatemo_timeline .left_timer {
+    float: right;
+    background: url("../images/arrow_left.png") 0 5px;
+}
+#templatemo_timeline .right_timer {
+    float: left;
+    background: url("../images/arrow_right.png") 0px 5px;
+}
+#templatemo_timeline .left_timer ,
+#templatemo_timeline .right_timer {
+    padding-left:30px;
+    width: 101px;
+    position: absolute;
+}
+#templatemo_timeline .left_timer span,
+#templatemo_timeline .right_timer span {
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background: #e6e6e6;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 3px;
+    margin-top: 3px;
+}
 /*contact*/
 #templatemo_contact {
     background: #f15556;
@@ -192,9 +310,6 @@ body {
 }
 #templatemo_contact h1 {
     color: #fff;
-    text-align: center;
-    font: normal normal normal 34px/60px;
-}
 }
 #templatemo_contact h2 {
     font-size: 24px;
@@ -227,6 +342,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
+    border: none;
     border-radius: 20px;
 }
 #templatemo_contact textarea {
@@ -234,7 +350,6 @@ body {
     width: 100%;
     height: 150px;
     padding: 10px;
-    border-radius: 20px;
 }
 #templatemo_contact button {
     width: 100%;
@@ -244,14 +359,9 @@ body {
     margin-bottom: 20px;
     border: none;
     background: #eaeaea;
-    border-radius: 20px;
 }
 #templatemo_contact button:hover {
     background: #f4f4f4;
-}
-
-#description h1{
-    color: #000 !important;
 }
 /*templatemo_footer*/
 #templatemo_footer {
@@ -266,15 +376,8 @@ body {
     text-align: center;
 }
 #templatemo_footer a {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Lato';
-}
-
-#templatemo_footer a:hover {
     color: #fff;
+    text-decoration: none;
 }
 /*  Small devices (tablets, 768px and up)  */
 @media (max-width: 768px ) { 
@@ -306,9 +409,7 @@ body {
     float: left;
 }
 #templatemo_describe h1 {
-    color: #ffffff;
-    text-align: center;
-    font: normal normal normal 34px/60px 'Raleway', sans-serif;
+    color: #fff;
 }
 #templatemo_describe h2 {
     font-size: 24px;
@@ -345,7 +446,6 @@ body {
     padding: 10px;
     border: none;
     color: #000;
-    border-radius: 20px;
 }
 #templatemo_describe textarea {
     border: none;
@@ -361,8 +461,6 @@ body {
     margin-bottom: 20px;
     border: none;
     background: #eaeaea;
-    border-radius: 20px;
-    box-shadow: inset;
 }
 #templatemo_describe button:hover {
     background: #f4f4f4;
