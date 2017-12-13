@@ -1,5 +1,5 @@
 html, body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -23,8 +23,8 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 	height: 50px;
     float: left;
 }
-#thelogo a{
-	
+#thelogo a:hover {
+	color: #ffffff;
 }
 #toggle{
 	display: none;
@@ -34,7 +34,7 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 
 }
 #secondLabel{
-	padding-left: 200px;
+	padding-left: 230px;
 }
 /*My new changes begin here*/
 
@@ -50,8 +50,7 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 
 	padding: 50px;
 	margin: 5px;
-	/padding-top: 35px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     font: normal normal normal 18px/23px 'Lato', sans-serif;
     color: #000;
     transition-duration: .5s;
@@ -64,6 +63,27 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
     color: #ffffff;
     text-decoration: none;
     
+}
+/*About Us*/
+#landing_about{
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/about us.jpg');
+	height: 80%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.description h1 {
+	color: #ffffff;
+    text-align: center;
+    font: normal normal normal 34px/60px 'Lato', sans-serif;
+}
+.description p{
+	text-align: justify;
+	color: #E0E0E0;
+	margin-left: 20px;
+	margin-right: 20px;
+	 font: normal normal normal 20px/30px 'Lato', sans-serif;
+}
+
 }
 @keyframes slidy {
 0% { left: 0%; }
@@ -156,6 +176,8 @@ div#slider2 figure {
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	
 	}
+	.description h1{
+	}
 
 	#toggle:checked + .menu{
 		display: block;
@@ -179,6 +201,11 @@ div#slider2 figure {
 	}
 	#secondLabel{
 		padding-left: 15px;
+	}
+	#landing_about{
+	background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+	margin-top: -20px;
+	background-size: 100%;
 	}
 	div#slider figure img{
 		height: 250px;
