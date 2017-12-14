@@ -21,6 +21,7 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 #scrollbox textarea{
 	width: 100%;
 	height: 600px;
+	text-align: justify;
 }
 
 #mainLabel{
