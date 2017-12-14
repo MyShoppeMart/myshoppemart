@@ -326,6 +326,9 @@ h1 {
 #templatemo_contact ul li a {
     background: none;
 }
+#templatemo_contact ul li a:hover {
+    color: 
+}
 #templatemo_contact ul li a i {
     width: 60px;
     padding: 20px 0;
@@ -446,6 +449,7 @@ h1 {
     padding: 10px;
     border: none;
     color: #000;
+    border-radius: 20px;
 }
 #templatemo_describe textarea {
     border: none;
