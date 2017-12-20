@@ -21,7 +21,6 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 #scrollbox textarea{
 	width: 100%;
 	height: 600px;
-	text-align: justify;
 }
 
 #mainLabel{
@@ -46,11 +45,11 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 	display: none;
 }
 #myLabel{
-	padding-left: 200px;
+	padding-left: 219px;
 
 }
 #secondLabel{
-	padding-left: 200px;
+	padding-left: 219px;
 }
 /*My new changes begin here*/
 
@@ -63,7 +62,7 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 	background-color: #f9f9f9;
 }
 .newnav a, .newnav a:focus{
-	padding: 55px 50px 50px 50px;
+	padding: 55px 30px 50px 30px;
 	/margin: 5px;
 	/padding-top: 30px;
     /padding-bottom: 50px;
@@ -176,8 +175,17 @@ div#slider2 figure {
 	font-size: 30px;
 	padding-top: 23px;
 }
-
-@media screen and (max-width: 500px){
+#mySelect{
+	height: 50px;
+	width: 115px;
+	border-radius: 25px;
+}
+#mySelect2{
+	height: 50px;
+	width: 319px;
+	border-radius: 25px;;
+}
+@media screen and (max-width: 600px){
 	
 	#mainLabel{
 	display: block;
@@ -251,6 +259,7 @@ div#slider2 figure {
 	#privacybanner{
 	margin:0;
 	width: 100%;
+	height: 50%;
 	}
 	.centered {
 
@@ -272,6 +281,35 @@ div#slider2 figure {
 	.centered p span{
 
 	}
+	#mySelect{
+		height: 50px;
+		width: 100%;
+		border-radius: 25px;
+	}
+	#mySelect2{
+		height: 50px;
+		width: 100%;
+		border-radius: 25px;;
+	}
 
 
+}
+/*media query for that stupid form*/
+/@media screen and (max-width: 990px){
+	#mySelect{
+		height: 50px;
+		width: 100%;
+		border-radius: 25px;
+	}
+	#mySelect2{
+		height: 50px;
+		width: 100%;
+		border-radius: 25px;;
+	}
+	#myLabel{
+		padding-left: 13px;
+	}
+	#secondLabel{
+		padding-left: 15px;
+	}
 }

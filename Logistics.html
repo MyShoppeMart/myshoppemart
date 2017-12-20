@@ -18,6 +18,8 @@
     <!--Google Font API -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     
+    <script type="text/javascript">!function(t,e){"use strict";var r=function(t){try{var r=e.head||e.getElementsByTagName("head")[0],a=e.createElement("script");a.setAttribute("type","text/javascript"),a.setAttribute("src",t),r.appendChild(a)}catch(t){}};t.CollectId = "5a32f36b6fddc44df54b8b2e",r("https://s3.amazonaws.com/collectchat/launcher.js")}(window,document);</script>
+    
 </head>
 <body>
     <div class="newnav">
@@ -64,24 +66,24 @@
                 <div class="col-md-12 col-md-offset-3">
                 <h4 style="color: white;">Couldn't find exactly what you want? No problems, we've got you covered just describe your product(s) and place an order, we'll contact you with the details and price(s) if found, for confirmation and further processing.</h4>
                 </div>
-                <div class="col-md-12 col-md-offset-5">
-                <p>Select your logisitics partner by checking any of the boxes</p>
-                    <ul class="list-inline social-link">
-                        <li>
-                            <a href="#"><img src="Images/gig.png"></a>
-                            <input type="radio" name="logistics" id="logiCheck" /> 
-                        </li>
-                        <li>
-                            <a href="#"><img src="Images/fedex.png"></a>
-                            <input type="radio" name="logistics" id="logiCheck" /> 
-                        </li>
-                         <li>
-                             <a href="#"><img src="Images/dhl copy.png"></a> 
-                             <input type="radio" name="logistics" id="logiCheck" />
-                        </li>
-                     </ul>
-
+                
+                <div class="col-md-6" id="myLabel">
+                    <p>Select your service</p>
+                    <select id="mySelect">
+                        <option value="volvo">Pickup</option>
+                        <option value="saab">Delivery</option>
+                    </select>
                 </div>
+                <div class="col-md-6">
+                    <p>Logistics Partner</p>
+                    <select id="mySelect2">
+                        <option value="GIG">GIG</option>
+                        <option value="De Young">De Young</option>
+                        <option value="FedEx">FedEx</option>
+                        <option value="Ekeson">Ekeson</option>
+                    </select>
+                </div>
+                
                 <div class="col-md-6" id="myLabel">
                     <p>Name</p>
                     <input type="text" name="name" id="name" placeholder="Your Name" />
