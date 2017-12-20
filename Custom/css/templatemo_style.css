@@ -8,6 +8,41 @@ body {
     width: 100%;
     background: #BDBDBD;
 }
+.container_wapper2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container_wapper2 img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.container_wapper2 p{
+     font: normal normal normal 18px/23px 'Raleway', sans-serif;
+}
+/*used in about us page*/
+.container_wapper3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    width: 100%;
+    background: #BDBDBD;
+}
+.container-fluid-footer {
+    width: 100%;
+}
+#templatemo_about_footer {
+    background-color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    float: left;
+}
+#footericons{
+    font-size: 20px;
+    padding: 10px;
+}
+
 .rcolor {
     background: #f00;
 }
@@ -366,9 +401,10 @@ h1 {
 /*templatemo_footer*/
 #templatemo_footer {
     width: 100%;
-    height: 100px;
-    background: #4f4f4f;
+    height: 80px;
+    background: #666666;
     float: left;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
 #templatemo_footer p {
     padding-top: 20px;
@@ -379,6 +415,7 @@ h1 {
     color: #fff;
     text-decoration: none;
 }
+
 /*  Small devices (tablets, 768px and up)  */
 @media (max-width: 768px ) { 
     #templatemo_about .pre_next {

@@ -163,15 +163,19 @@ div#slider2 figure {
 	border-radius: 25px;;
 }
 #myownp{
+	color: #fff;
 	padding-right:1% !important;
 	padding-left: 1% !important;
 	 
 }
 #myownp a{
+	color: #fff;
+}
+#aboutlink{
 	color: #f15556;
 }
 #myownh4{
-	padding-top: 10px;
+	color: #f15556;
 }
 @media screen and (max-width: 600px){
 	
