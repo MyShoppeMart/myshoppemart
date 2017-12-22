@@ -23,6 +23,11 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 	text-transform: uppercase;
 	margin-left: 200px;
 }
+ #about_h5{
+	text-align: center;
+	font: normal normal normal 28px/43px 'Raleway', sans-serif;
+	text-transform: uppercase;
+	}
 #about_mission{
 	text-align: center;
 	font: normal normal normal 18px/33px 'Raleway', sans-serif;
