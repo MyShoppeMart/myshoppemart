@@ -21,6 +21,12 @@ PLEASE DO NOT TAMPER WITH ANY CODE WITHIN THIS WARNING*/
 	text-align: center;
 	font: normal normal normal 28px/43px 'Raleway', sans-serif;
 	text-transform: uppercase;
+	margin-left: 200px;
+}
+#about_mission{
+	text-align: center;
+	font: normal normal normal 18px/33px 'Raleway', sans-serif;
+	margin-left: 200px;
 }
 #scrollbox textarea{
 	width: 100%;
@@ -183,6 +189,10 @@ div#slider2 figure {
 #myownh4{
 	color: #f15556;
 }
+#mission p {
+	font-size: 20px;
+	text-align: center;
+}
 @media screen and (max-width: 600px){
 	
 	#mainLabel{
@@ -292,6 +302,19 @@ div#slider2 figure {
 		width: 100%;
 		border-radius: 25px;;
 	}
+	#about_mission{
+	text-align: center;
+	font: normal normal normal 15px 'Raleway', sans-serif !important;
+	margin: 0px;
+    }
+
+    #about_h4{
+	text-align: center;
+	font: normal normal normal 28px/43px 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin-left: 0px;
+}
+
 
 
 }
@@ -312,5 +335,16 @@ div#slider2 figure {
 	}
 	#secondLabel{
 		padding-left: 15px;
+	}
+	#about_mission{
+	text-align: center;
+	font: normal normal normal 15px 'Raleway', sans-serif !important;
+	margin: 0px;
+}
+ #about_h4{
+	text-align: center;
+	font: normal normal normal 28px/43px 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin-left: 0px;
 	}
 }
