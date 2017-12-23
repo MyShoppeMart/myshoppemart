@@ -60,7 +60,7 @@
     <div class="container-fluid">
         <h1>Custom Product Description</h1>
         
-        <form action="#" method="post" class="col-md-8">
+        <form action="connect.php" method="post" class="col-md-8">
             <div class="column">
                 <div class="col-md-12 col-md-offset-3">
                 <h2>I want to buy:</h2>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Product Description*</p>
-                    <textarea name="message" id="message"  placeholder="Describe your product here..."></textarea>
+                    <textarea name="description" id="message"  placeholder="Describe your product here..."></textarea>
                 </div>
                 <div class="col-md-6" id="secondLabel">
                     <p>Name*</p>
@@ -80,11 +80,11 @@
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Phone No*</p>
-                    <input type="text" name="email" id="email" placeholder="Your Phone Number Here" />
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number Here" />
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Delivery Address*</p>
-                    <input type="text" name="subject" id="subject" placeholder="Write your address here" />
+                    <input type="text" name="address" id="subject" placeholder="Write your address here" />
                 </div>
 
                 <div class="col-xs-6 col-sm-3 col-md-offset-4">

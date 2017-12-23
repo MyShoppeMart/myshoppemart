@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <title>MyShoppemart - Retail, shopping, marketplace, logistics.</title>
-  <link rel="shortcut icon" href="Images/FAVICON.png">
-  <meta charset="utf-8">
-  <!-- Main CSS File -->
+<link href="Images/FAVICON.png" rel="shortcut icon" type="image/png">
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <!-- S
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Main CSS File -->
   <link rel="stylesheet" href="css/MSMstyle.css">
-  <!--Font Awesome -->
+
+  <link rel="stylesheet" href="css/login.css">
+    <!--Font Awesome -->
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <!--Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- Template  -->
-  <link href="css/templatemo_style.css" rel="stylesheet">
-  <!--Google Font API -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="css/camera.css">
+     <!-- Template  -->
+    <link href="css/templatemo_style.css" rel="stylesheet">
+    <!--Google Font API -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-    <body>
-        <div class="newnav">
+
+<?php
+$servername = "myshoppemart.com.mysql";
+$username = "myshoppemart_com";
+$password = "LyneXtkK";
+$dbname = "myshoppemart_com";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT id, description, name, email, phone, address, availability FROM userdata";
+$result = $conn->query($sql); ?>
+
+<div class="newnav">
             <div>
             <a href="index.html" id="thelogo"><img src="Images/LOGO small.png"></a>
             </div>
@@ -33,16 +60,32 @@
                 <a href="Contact-Us.html"><i class="fa fa-address-card-o" aria-hidden="true"></i> Contact</a>
                 <a href="About-Us.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
             </div>
-    
-        </div>
+</div>
+ <br>   
+<!-- notification message -->
+<?php if ($result->num_rows > 0) : ?>
+<div class="col-md-12">
+<div class="panel panel-success">
+  
+  <div class="panel panel-heading" >
+    <div id="dash_h4">
+        <a href="index.html"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a>
+        <a href="Platforms.html"><i class="fa fa-plus" aria-hidden="true"></i> Add custom order</a>
 
-<div class="container">
-  <h2>My Custom Orders</h2>
-  <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
-  <div class="table-responsive">          
-  <table class="table">
+    </div>
+          <div class="menu">
+            <p><i class="fa fa-home" aria-hidden="true"></i> My Custom Orders</p>
+                
+          </div>  
+  </div>                      
+
+  
+  <div class="panel-body">      
+   <div class="table-responsive">          
+  <table class="table">          
+    
     <thead>
-      <tr>
+    <tr>
         <th>#</th>
         <th>Description</th>
         <th>Name</th>
@@ -50,24 +93,33 @@
         <th>Phone</th>
         <th>Address</th>
         <th>Availability</th>
-      </tr>
+    </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td >1</td>
-        <td>An Apple ipad air</td>
-        <td>Pitt</td>
-        <td>princekelvin91@gmail.com</td>
-        <td>08166879424</td>
-        <td>Nigeria</td>
-        <td><a class="btn btn-default" id="found" href="#">
-          <i class="fa fa-asterisk"></i><span id="available"> Not found yet</span></a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+
+      
+      <?php 
+        while($row = $result->fetch_assoc()) {
+            echo "<tr><td>" . $row["id"]. "</td><td>" . $row["description"]. "</td><td> " . $row["name"]. "</td><td>" . 
+            $row["email"]. "</td><td>" . $row["phone"]. "</td><td>" . $row["address"]. "</td><td>" . $row["availability"]. 
+            "</td> 
+            <a class='btn btn-default' id='found' href='#'>
+            <i class='fa fa-asterisk'></i><span id='available'> Not found yet</span></a>
+            <td>" . 
+            "</td></tr>";
+        }
+        echo "</table>";
+         
+        else:
+        echo "0 results";
+        $conn->close();
+      ?>
   </div>
 </div>
+</div>
+</div>
+</div>
+<?php endif ?>
+
 <div id="templatemo_about_footer" >
     <div class="container-fluid-footer">
         <div class="col-sm-6 col-md-3 about_icon">
@@ -147,23 +199,24 @@
         
         </p> 
 </div>
+<div class="content">
+    <!-- notification message -->
+    <?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+        <h3>
+          <?php 
+            echo $_SESSION['success']; 
+            unset($_SESSION['success']);
+          ?>
+        </h3>
+      </div>
+    <?php endif ?>
 
-<script>
-  var _available = true;
-  if(_available == true){
-    document.getElementById("found").className = "btn btn-success";
-    var element = document.getElementById("available");
-    element.innerHTML = "Found";
-  }
-  else{
-    document.getElementById("found").className = "btn btn-default";
-    var element = document.getElementById("available");
-    element.innerHTML = "Not Found yet";
-    var yourElement = document.getElementById('found');
-    yourElement.setAttribute('href', 'javascript: void(0)');
-    
-  }
-  </script>
-  
+    <!-- logged in user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+        <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+        <p> <a href="Dashboard.php?logout='1'" style="color: red;">logout</a> </p>
+    <?php endif ?>
+</div>
 </body>
 </html>

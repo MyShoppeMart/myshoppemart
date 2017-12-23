@@ -216,14 +216,15 @@ div#slider2 figure {
 	}
 	.menu{
 		
-		height: 480px;
+		height: 240px;
 		float: right;
 		text-align: left;
 		width: 100%;
 		display: none;
 	
 	}
-	.menu a{
+	.menu a {
+		padding: 5px 10px 30px 30px;
 		z-index: 5500
 		font-size: 13px;
 		color: black;
