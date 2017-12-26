@@ -7,11 +7,14 @@ body {
   background: #F8F8FF;
 }
 
+.container_form{
+    margin: 20px auto;
+ }
 .header {
   width: 30%;
   margin: 50px auto 0px;
   color: white;
-  background: #5F9EA0;
+  background: #f15556;
   text-align: center;
   border: 1px solid #B0C4DE;
   border-bottom: none;
@@ -36,7 +39,7 @@ form, .content {
 }
 .input-group input {
   height: 30px;
-  width: 93%;
+  width: 100%;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -46,7 +49,7 @@ form, .content {
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: #5F9EA0;
+  background: #f15556;
   border: none;
   border-radius: 5px;
 }
@@ -65,4 +68,28 @@ form, .content {
   background: #dff0d8; 
   border: 1px solid #3c763d;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 600px){
+  form, .content {
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .header {
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    background: #f15556;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+  }
+  .container_form{
+    margin: 100px 0px 20px 0;
+ }
 }

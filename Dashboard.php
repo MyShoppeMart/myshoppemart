@@ -2,7 +2,8 @@
 <html>
 <html>
 <head>
-<link href="Images/FAVICON.png" rel="shortcut icon" type="image/png">
+        <title>Dashboard</title>
+        <link href="Images/FAVICON.png" rel="shortcut icon" type="image/png">
 
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -10,9 +11,9 @@
         
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <!-- S
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Main CSS File -->
   <link rel="stylesheet" href="css/MSMstyle.css">
@@ -50,7 +51,7 @@ $result = $conn->query($sql); ?>
 
 <div class="newnav">
             <div>
-            <a href="index.html" id="thelogo"><img src="Images/LOGO small.png"></a>
+            <a href="index.html" id="thelogo"><img src="Images/christmaspng.png" width="80" height="80"></a>
             </div>
             <label for="toggle" id="mainLabel"><i class="fa fa-bars" aria-hidden="true"></i></label>
             <input type="checkbox" id="toggle"/>

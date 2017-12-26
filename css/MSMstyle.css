@@ -207,6 +207,8 @@ div#slider2 figure {
 
 	.newnav{
 		height: 80px;
+		position: fixed;
+    	z-index: 1;
 
 	}
 
