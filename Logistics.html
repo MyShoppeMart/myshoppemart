@@ -69,14 +69,14 @@
                 
                 <div class="col-md-6" id="myLabel">
                     <p>Select your service</p>
-                    <select id="mySelect">
-                        <option value="volvo">Pickup</option>
-                        <option value="saab">Delivery</option>
+                    <select id="mySelect" required>
+                        <option value="pickup">Pickup</option>
+                        <option value="delivery">Delivery</option>
                     </select>
                 </div>
                 <div class="col-md-6">
                     <p>Logistics Partner</p>
-                    <select id="mySelect2">
+                    <select id="mySelect2" required>
                         <option value="GIG">GIG</option>
                         <option value="De Young">De Young</option>
                         <option value="FedEx">FedEx</option>
@@ -86,27 +86,27 @@
                 
                 <div class="col-md-6" id="myLabel">
                     <p>Name</p>
-                    <input type="text" name="name" id="name" placeholder="Your Name" />
+                    <input type="text" name="name" required id="name" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6">
                     <p>Email</p>
-                    <input type="text" name="email" id="email" placeholder="Your Email" />
+                    <input type="text" name="email" required id="email" placeholder="Your Email" />
                 </div>
                 <div class="col-md-6" id="myLabel">
                     <p>Pickup</p>
-                    <input type="text" name="pickup" id="name" placeholder="Where do we pick up?" />
+                    <input type="text" name="pickup" required id="name" placeholder="Where do we pick up?" />
                 </div>
                 <div class="col-md-6">
                     <p>Destination</p>
-                    <input type="text" name="destination" id="email" placeholder="where do we deliver?" />
+                    <input type="text" name="destination" required id="email" placeholder="where do we deliver?" />
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Prduct Description*</p>
-                    <textarea name="message" id="message"  placeholder="Describe what we are to pickup..."></textarea>
+                    <textarea name="message" required id="message"  placeholder="Describe what we are to pickup..."></textarea>
                 </div>    
                 <div class="col-md-9 col-md-offset-3">
                     <p>Phone No*</p>
-                    <input type="text" name="email" id="email" placeholder="Your Phone Number Here" />
+                    <input type="text" name="email" required required id="email" placeholder="Your Phone Number Here" />
                 </div>    
                 <div class="col-xs-6 col-sm-3 col-md-offset-4">
                      <button class="btn btn-success-primary" type="submit" style="background-color: #FFEB3B;"><b>Submit</b></button>

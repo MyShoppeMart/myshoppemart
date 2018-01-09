@@ -26,17 +26,27 @@ if (isset($_POST['reg_user'])) {
 	array_push($errors, "The two passwords do not match");
   }
 
-  // register user if there are no errors in the form
-  if (count($errors) == 0) {
-  	$password = md5($password_1);//encrypt the password before saving in the database
-  	$query = "INSERT INTO users (username, email, password) 
-  			  VALUES('$username', '$email', '$password')";
-  	mysqli_query($db, $query);
-  	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "You are now logged in";
-  	header('location: Dashboard.php');
-  }
+  // check if user already exists
+  $check=mysqli_query($db,"SELECT * FROM users WHERE email='$email'");
 
+  $checkrows=mysqli_num_rows($check);
+
+if($checkrows>0) {
+      array_push($errors, "Email Already Exists, Try signing in");
+}
+
+  // register user if there are no errors in the form
+else{
+  if (count($errors) == 0) {
+    $password = md5($password_1);//encrypt the password before saving in the database
+    $query = "INSERT INTO users (username, email, password) 
+          VALUES('$username', '$email', '$password')";
+    mysqli_query($db, $query);
+    $_SESSION['username'] = $username;
+    $_SESSION['success'] = "You are now logged in";
+    header('location: Dashboard.php');
+  }
+}
 }
 if (isset($_POST['login_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);

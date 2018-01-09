@@ -42,6 +42,9 @@ body {
     font-size: 20px;
     padding: 10px;
 }
+ #footericons .hover-item-fb a:hover{
+    background-color: #0D47A1;
+}
 
 .rcolor {
     background: #f00;
@@ -410,6 +413,7 @@ h1 {
     padding-top: 20px;
     color: #fff;
     text-align: center;
+    margin: 0;
 }
 #templatemo_footer a {
     color: #fff;
@@ -436,6 +440,12 @@ h1 {
     #templatemo_timeline .container-fluid {
         background: url("../images/time_line_bg.jpg") repeat-y 28px 0;
     }
+    .container_wapper_about img{
+    padding-top: 80px;
+    height: 100%;
+    width: 100%;
+
+}
 }
 /*  Large devices (large desktops, 1200px and up)  */
 @media (min-width: 1200px ) {

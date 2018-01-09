@@ -1,15 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-body {
-  font-size: 120%;
-  background: #F8F8FF;
-}
 
-.container_form{
-    margin: 20px auto;
- }
 .header {
   width: 30%;
   margin: 50px auto 0px;
@@ -23,23 +12,24 @@ body {
 }
 form, .content {
   width: 30%;
-  margin: 0px auto;
+  margin: auto;
+  margin-bottom: 35px;
   padding: 20px;
   border: 1px solid #B0C4DE;
   background: white;
   border-radius: 0px 0px 10px 10px;
 }
-.input-group {
+.myinput-group {
   margin: 10px 0px 10px 0px;
 }
-.input-group label {
+.myinput-group label {
   display: block;
   text-align: left;
   margin: 3px;
 }
-.input-group input {
-  height: 30px;
-  width: 100%;
+.myinput-group input {
+  height: 60px;
+  width: 93%;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -92,4 +82,12 @@ form, .content {
   .container_form{
     margin: 100px 0px 20px 0;
  }
+  .myinput-group input {
+    height: 30px;
+    width: 100% !important;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
 }

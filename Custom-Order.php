@@ -68,23 +68,23 @@
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Product Description*</p>
-                    <textarea name="description" id="message"  placeholder="Describe your product here..."></textarea>
+                    <textarea name="description" required="required" id="message"  placeholder="Describe your product here..."></textarea>
                 </div>
                 <div class="col-md-6" id="secondLabel">
                     <p>Name*</p>
-                    <input type="text" name="name" id="name" placeholder="Your Name" />
+                    <input type="text" name="name" required="required" id="name" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6">
                     <p>Email*</p>
-                    <input type="text" name="email" id="email" placeholder="Your Email" />
+                    <input type="text" name="email" required="required" id="email" placeholder="Your Email" />
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Phone No*</p>
-                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number Here" />
+                    <input type="text" name="phone" required="required" id="phone" placeholder="Your Phone Number Here" />
                 </div>
                 <div class="col-md-9 col-md-offset-3">
                     <p>Delivery Address*</p>
-                    <input type="text" name="address" id="subject" placeholder="Write your address here" />
+                    <input type="text" name="address" required="required" id="subject" placeholder="Write your address here" />
                 </div>
 
                 <div class="col-xs-6 col-sm-3 col-md-offset-4">

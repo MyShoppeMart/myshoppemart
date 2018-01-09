@@ -1,37 +1,36 @@
 <?php
-$server = "myshoppemart.com.mysql";
-$user = "myshoppemart_com";
-$pass = "LyneXtkK";
-$dbname = "myshoppemart_com";
 
- 
-//Creating connection for mysqli
- 
-$conn = new mysqli($server, $user, $pass, $dbname);
- 
-//Checking connection
- 
-if($conn->connect_error){
- die("Connection failed:" . $conn->connect_error);
+$db = mysqli_connect('myshoppemart.com.mysql', 'myshoppemart_com', 'LyneXtkK', 'myshoppemart_com');
+
+
+  $description = mysqli_real_escape_string($db, $_POST['description']);
+  $name = mysqli_real_escape_string($db, $_POST['name']);
+  $email = mysqli_real_escape_string($db, $_POST['email']);
+  $phone = mysqli_real_escape_string($db, $_POST['phone']);
+  $address = mysqli_real_escape_string($db, $_POST['address']);
+
+
+// check if user is premium
+  $check=mysqli_query($db,"SELECT * FROM users WHERE email='$email'");
+
+  $checkrows=mysqli_num_rows($check);
+
+if($checkrows>0) {
+      $sql = "INSERT INTO is_premium_customorder (description, name, email, phone, address) VALUES ('$description', '$name', '$email', '$phone', '$address')";
+}
+
+else{
+    $sql = "INSERT INTO not_premium_customorder (description, name, email, phone, address) VALUES ('$description', '$name', '$email', '$phone', '$address')";
 }
  
-$description = mysqli_real_escape_string($conn, $_POST['description']);
-$name = mysqli_real_escape_string($conn, $_POST['name']);
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$phone = mysqli_real_escape_string($conn, $_POST['phone']);
-$address = mysqli_real_escape_string($conn, $_POST['address']);
- 
-$sql = "INSERT INTO userdata (description, name, email, phone, address) VALUES ('$description', '$name', '$email', '$phone', '$address')";
- 
-if($conn->query($sql) === TRUE){
+if($db->query($sql) == TRUE){
  
  header('location: success.html');
 }
 
 else
 {
- echo "Error" . $sql . "<br/>" . $conn->error;
+ echo "Error" . $sql . "<br/>" . $db->error;
 }
-$conn->close();
+$db->close();
 ?>
-
