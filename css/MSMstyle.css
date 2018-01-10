@@ -356,3 +356,131 @@ div#slider2 figure {
 	margin-left: 0px;
 	}
 }
+
+@media screen and (max-width: 768px){
+	#mainLabel{
+	display: block;
+	cursor: pointer;
+	}
+
+	.newnav{
+		height: 80px;
+		position: fixed;
+    	z-index: 1;
+
+	}
+
+	.nav{
+		background-color: white;
+		border-bottom: 1px solid white;
+	}
+	.menu{
+		
+		height: 240px;
+		float: right;
+		text-align: left;
+		width: 100%;
+		display: none;
+	
+	}
+	.menu a {
+		padding: 5px 10px 30px 30px;
+		z-index: 5500
+		font-size: 13px;
+		color: black;
+		background-color: #f9f9f9;
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0;
+		clear: right;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+
+	}
+	#thelogo{
+		/padding-top: 20px;
+		margin: 0;
+		height: 0px;
+		float: left;
+	}
+	#thelogo a{
+		height: 0;
+		padding: 0 !important;
+	}
+	.dropdown{
+		display: none;
+	}
+	#myLabel{
+		padding-left: 13px;
+	}
+	#secondLabel{
+		padding-left: 15px;
+	}
+	div#slider figure img{
+		height: 250px;
+	}
+	div#slider2 figure img{
+		height: 250px;
+	}
+	#scrollbox{
+		padding-left: 30px;
+    	padding-right: 30px;
+	}
+	#text p {
+		font-size: 15px;
+	}
+	#privacybanner{
+	margin:0;
+	width: 100%;
+	height: 50%;
+	}
+	.centered {
+
+	max-height: 500px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /transform: translate(-50%, -50%);
+	}
+.centered h3{
+	text-align: center;
+	 font: normal normal normal 18px/23px 'Raleway', sans-serif;
+	}
+
+.centered p {
+	font: normal normal normal 14px/20px 'Raleway', sans-serif;
+	line-height: 1.1em;
+	}
+	.centered p span{
+
+	}
+	#mySelect{
+		height: 50px;
+		width: 100%;
+		border-radius: 25px;
+	}
+	#mySelect2{
+		height: 50px;
+		width: 100%;
+		border-radius: 25px;;
+	}
+	#about_mission{
+	text-align: center;
+	font: normal normal normal 15px 'Raleway', sans-serif !important;
+	margin: 0px;
+    }
+
+    #about_h4{
+	text-align: center;
+	font: normal normal normal 28px/43px 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin-left: 0px !important;
+}
+
+
+
+}
