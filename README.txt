@@ -1,13 +1,13 @@
 
 TITLE: 
-Guide - Fully Responsive Free HTML5 template
+My ShoppeMart Business Systems
 
 AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
+DESIGNED & DEVELOPED by MyShoppeMart Developers
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+Website: http://www.myshoppemart.com
+Twitter: https://twitter.com/MyShoppeMart
+Facebook: https://facebook.com/myshoppemart
 
 
 CREDITS:
